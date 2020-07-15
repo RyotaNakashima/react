@@ -1,8 +1,11 @@
 import React from 'react';
 
-function About(){
+function About (props) {
+    const { match } = props;
+    console.log(match);
+    console.log(match.params.id,'idは？');
     return(
-        <h1>アバウトページです１</h1>
+        <h1>アバウトページです！</h1>
     );
 }
 
